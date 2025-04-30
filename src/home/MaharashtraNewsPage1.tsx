@@ -1,11 +1,11 @@
 import React from "react";
 
-const MaharashtraNewsPage: React.FC = () => {
+const MaharashtraNewsPage1: React.FC = () => {
   return (
     <div className="bg-gray-100 min-h-screen w-4xl justify-center  left-96 mt-48 max-w-4xl mx-auto p-6">
       {/* Breadcrumb */}
       <div className="text-sm text-gray-600 mb-2">
-        Home &gt; <span className="text-black font-semibold">maharashtra</span>
+        Home &gt; <span className="text-black font-semibold">Politics</span>
       </div>  
 
       {/* Main Section */}
@@ -14,13 +14,14 @@ const MaharashtraNewsPage: React.FC = () => {
         <div className="flex-[2] space-y-6">
           {/* Section Title */}
           <div className="flex items-center gap-2 border-l-4 border-orange-500 pl-2 text-xl font-bold">
-            महाराष्ट्र
+          राजकारण
+
           </div>
 
           {/* Big News Card */}
           <div className="bg-white rounded-md overflow-hidden shadow">
             <img
-              src="https://images.letsupp.com/wp-content/uploads/2025/04/Maharashtra-First-Cyber-Wellness-Centre_V_jpg--1280x720-4g.webp"
+              src="https://images.letsupp.com/wp-content/uploads/2025/04/Maharashtra-Tourism_V_jpg--1280x720-4g.webp"
               alt="Main News"
               className="w-full h-64 object-cover"
             />
@@ -134,4 +135,4 @@ const MaharashtraNewsPage: React.FC = () => {
   );
 };
 
-export default MaharashtraNewsPage;
+export default MaharashtraNewsPage1;

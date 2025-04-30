@@ -1,6 +1,7 @@
 import { FaHome } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+function Navbar() {
   const links = [
     "Politics",
     "Country",
@@ -16,29 +17,23 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="border-b overflow-x-auto whitespace-nowrap">
-      <div className="flex items-center gap-4 sm:gap-6 px-4 py-3 min-w-max">
-        <FaHome className="text-xl flex-shrink-0 cursor-pointer" />
+    <nav className="border-b overflow-x-auto">
+      <div className="flex justify-center items-center gap-4 sm:gap-6 px-4 py-3 w-full min-w-max">
+        <Link to="/">
+          <FaHome className="text-xl flex-shrink-0 cursor-pointer" />
+        </Link>
         {links.map((link, index) => (
-          <a
+          <Link
             key={index}
-            href="#"
+            to={`/${link.toLowerCase().replace(/\s+/g, "-")}`}
             className="font-medium text-sm sm:text-base md:text-lg hover:underline"
           >
             {link}
-          </a>
+          </Link>
         ))}
       </div>
     </nav>
   );
 }
 
-
-
-
-
-
-
-
-
- 
+export default Navbar;

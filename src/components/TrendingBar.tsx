@@ -1,6 +1,6 @@
 import { FaChartLine } from "react-icons/fa";
 
-export default function TrendingBar() {
+ function TrendingBar() {
   const trending = [
     "OBC reservation",
     "Maratha Reservation",
@@ -11,7 +11,7 @@ export default function TrendingBar() {
   ];
 
   return (
-    <div className="flex items-center justify-center gap-6 px-6 py-2 bg-white shadow-sm text-sm overflow-x-auto">
+    <div className="flex items-center justify-center gap-6 px-6 py-2 bg-white text-sm overflow-x-auto">
       <div className="flex items-center gap-2 text-orange-500 font-semibold">
         <FaChartLine />
         TRENDING
@@ -24,3 +24,5 @@ export default function TrendingBar() {
     </div>
   );
 }
+
+export default TrendingBar;

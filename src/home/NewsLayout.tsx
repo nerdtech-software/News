@@ -25,7 +25,7 @@ export default function NewsLayout() {
 
 
 
-    <div className="gap-6 p-4 bg-gray-100 min-h-screen  left-40 rounded-md text-gray-800">
+    <div className="gap-6  bg-gray-100   left-40 rounded-md text-gray-800">
 
       {/* Top Navigation Links */}
       <div className="flex gap-10 text-sm w-5xl pl-24 p-2 font-semibold text-gray-700">
@@ -80,9 +80,9 @@ export default function NewsLayout() {
 
       {/* Sports Section */}
       <div className="mt-8">
-        <h2 className="text-lg font-bold border-l-4 border-orange-500 pl-2">स्पोर्ट्स</h2>
+        <h2 className="text-lg font-bold border-l-4 border-orange-500 pl-2"></h2>
       </div>
-      <span className="block border-b-2 p-2 border-gray-300 w-3xl"></span>
+      {/* <span className="block border-b-2 p-2 border-gray-300 w-3xl"></span> */}
 
     </div>
     </>

@@ -1,7 +1,9 @@
 import BreakingNewsBar from "./BreakingNewsBar";
 import MainNews from "./MainNews";
 import MainNewsCard from "./MainNewsCard";
+import NewsGridLayout from "./NewsGridLayout";
 import NewsLayout from "./NewsLayout";
+import NewsLayout1 from "./NewsLayout1";
 import RightSidebar from "./RightSidebar";
 import SidebarNewsCard from "./SidebarNewsCard";
 
@@ -73,6 +75,9 @@ export default function HomePage() {
         </div>
         <div className="md:col-span-1">
           <NewsLayout />
+          <NewsLayout1 />
+          <NewsGridLayout/>
+          
           
         </div>
         
