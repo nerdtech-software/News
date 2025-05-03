@@ -19,7 +19,7 @@ const MaharashtraNewsPage1: React.FC = () => {
           </div>
 
           {/* Big News Card */}
-          <div className="bg-white rounded-md overflow-hidden shadow">
+          <div className="bg-white rounded-md overflow-hidden shadow w-xl" >
             <img
               src="https://images.letsupp.com/wp-content/uploads/2025/04/Maharashtra-Tourism_V_jpg--1280x720-4g.webp"
               alt="Main News"
@@ -40,7 +40,7 @@ const MaharashtraNewsPage1: React.FC = () => {
           </div>
 
           {/* Small News Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Card 1 */}
             <div className="bg-white flex gap-3 p-3 rounded-md shadow">
               <img

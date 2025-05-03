@@ -1,11 +1,13 @@
-import React from "react";
+// src/components/NewsLayout.tsx
 
-const MaharashtraNewsPage2: React.FC = () => {
+
+
+const MumbaiNewsPage = () => {
   return (
     <div className="bg-gray-100 min-h-screen w-4xl justify-center  left-96 mt-48 max-w-4xl mx-auto p-6">
       {/* Breadcrumb */}
       <div className="text-sm text-gray-600 mb-2">
-        Home &gt; <span className="text-black font-semibold">Country</span>
+        Home &gt; <span className="text-black font-semibold">Politics</span>
       </div>  
 
       {/* Main Section */}
@@ -14,16 +16,16 @@ const MaharashtraNewsPage2: React.FC = () => {
         <div className="flex-[2] space-y-6">
           {/* Section Title */}
           <div className="flex items-center gap-2 border-l-4 border-orange-500 pl-2 text-xl font-bold">
-          देश
+          राजकारण
 
           </div>
 
           {/* Big News Card */}
-          <div className="bg-white rounded-md overflow-hidden shadow w-xl" >
+          <div className="bg-white flex rounded-md overflow-hidden shadow w-xl">
             <img
-              src="https://images.letsupp.com/wp-content/uploads/2025/04/PM-Modi-3_V_jpg--1280x720-4g.webp"
+              src="https://images.letsupp.com/wp-content/uploads/2025/04/Maharashtra-Tourism_V_jpg--1280x720-4g.webp"
               alt="Main News"
-              className="w-full h-64 object-cover"
+              className="w-56 h-64 object-fill"
             />
             <div className="p-4">
               <h2 className="text-lg font-bold mb-2">
@@ -87,7 +89,7 @@ const MaharashtraNewsPage2: React.FC = () => {
               <p className="text-sm font-semibold">
                 शेअर बाजारात तेजी, सेन्सेक्सने 1000 अंकांनी वाढ...
               </p>
-              <span className="text-xs text-gray-400">12 Mins Ago</span>
+              <span className="text-xs text-gray-400">12  00Mins Ago</span>
             </div>
 
             <div>
@@ -133,6 +135,7 @@ const MaharashtraNewsPage2: React.FC = () => {
       </div>
     </div>
   );
-};
+}
 
-export default MaharashtraNewsPage2;
+export default MumbaiNewsPage;
+
