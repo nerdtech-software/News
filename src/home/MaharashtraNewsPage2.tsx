@@ -19,7 +19,7 @@ const MaharashtraNewsPage2: React.FC = () => {
           </div>
 
           {/* Big News Card */}
-          <div className="bg-white rounded-md overflow-hidden shadow">
+          <div className="bg-white rounded-md overflow-hidden shadow w-xl" >
             <img
               src="https://images.letsupp.com/wp-content/uploads/2025/04/PM-Modi-3_V_jpg--1280x720-4g.webp"
               alt="Main News"

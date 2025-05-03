@@ -1,13 +1,14 @@
 import { FaChartLine } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
  function TrendingBar() {
   const trending = [
-    "OBC reservation",
-    "Maratha Reservation",
-    "Narendra Modi",
-    "Rahul Gandhi",
-    "LetsUpp YouTube",
-    "LetsUpp Instagram",
+    { label: "OBC reservation", link: "OBCReservation" },
+    { label: "Maratha Reservation", link: "marathaReservation" },
+    { label: "Narendra Modi", link: "narendraModi" },
+    { label: "Rahul Gandhi", link: "rahulGandhi" },
+    { label: "LetsUpp YouTube", link: "youTube" },
+    { label: "LetsUpp Instagram", link: "instagram" },
   ];
 
   return (
@@ -16,10 +17,10 @@ import { FaChartLine } from "react-icons/fa";
         <FaChartLine />
         TRENDING
       </div>
-      {trending.map((item, index) => (
-        <a key={index} href="#" className="text-gray-700 hover:text-blue-600 whitespace-nowrap">
-          {item}
-        </a>
+      {trending.map((item) => (
+       <Link to={item.link} key={item.label} className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
+        <span className="text-gray-700 hover:text-blue-600 whitespace-nowrap">{item.label}</span>
+       </Link>
       ))}
     </div>
   );

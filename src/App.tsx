@@ -6,6 +6,11 @@ import HomePage from "./home/HomePage";
 import MaharashtraNewsPage from "./home/MaharashtraNewsPage";
 import MaharashtraNewsPage1 from "./home/MaharashtraNewsPage1";
 import MaharashtraNewsPage2 from "./home/MaharashtraNewsPage2";
+import MumbaiNewsPage from "./home/MumbaiNewsPage";
+import PuneNewsPage from "./home/PuneNewsPage";
+import MarathaReservation from "./tranding/MarathaReservation";
+import { default as NarendraModi, default as OBCReservation } from "./tranding/NarendraModi";
+import RahulGandhi from "./tranding/RahulGandhi";
 
 const App = () => {
   const Layout = () => (
@@ -40,6 +45,30 @@ const App = () => {
         {
           path: "/Country",
           element: <MaharashtraNewsPage2 />,
+        },
+        {
+          path: "/mumbai",
+          element: <MumbaiNewsPage />,
+        },
+        {
+          path: "/OBCReservation",
+          element: <OBCReservation/>,
+        },
+        {
+          path: "/marathaReservation",
+          element: <MarathaReservation/>,
+        },
+        {
+          path: "/narendraModi",
+          element: <NarendraModi/>,
+        },
+        {
+          path: "/rahulGandhi",
+          element: <RahulGandhi />,
+        },
+        {
+          path: "/pune",
+          element: <PuneNewsPage/>,
         },
       ],
     },
