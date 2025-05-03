@@ -12,7 +12,7 @@ import logo from "../assets/logo.png";
   return (
   <div
       className="bg-blue-800 text-white bg-cover relative bg-top "
-      
+       
       style={{
         backgroundImage: `url('https://dvmep2zap7gv4.cloudfront.net/wp-content/uploads/2022/10/bg.png')`,
       }}
@@ -35,13 +35,11 @@ import logo from "../assets/logo.png";
 
         {/* Center Section */}
          {/* Set height on parent if needed */}
-  <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+         <div className="absolute top-0 left-0 right-0 flex items-center justify-center h-full ">
   <Link to="/home">
     <img className="w-[140px] h-auto" src={logo} alt="Logo" />
-    </Link>
-  </div>
-
-
+  </Link>
+</div>
       </div>
     </div>
   );
